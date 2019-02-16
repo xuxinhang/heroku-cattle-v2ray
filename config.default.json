@@ -1,0 +1,25 @@
+{
+  "log": {
+    // "access": "/path/to/access/log/file",
+    "error": "./error.log",
+    "loglevel": "warning"
+  },
+  // List of inbound proxy configurations.
+  "inbounds": [{
+    "port": 10008,
+    "listen": "0.0.0.0",
+    "protocol": "shadowsocks",
+    "settings": {
+      "method": "aes-256-cfb",
+      "password": "qazxswedc"
+    },
+    "streamSettings": {
+      "network":"ws"
+    }
+  }],
+  // List of outbound proxy configurations.
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  }]
+}
