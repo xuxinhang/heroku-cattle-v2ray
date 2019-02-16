@@ -1,1 +1,1 @@
-web: node gen_config.js > config.json && v2ray
+web: chmod +x run.sh && ./run.sh
